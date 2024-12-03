@@ -139,7 +139,7 @@ The following code will change the color of the selected text in a region to bla
 |Version      | Changes                                                                                                                                  | Date                 |
 |:-----------|:------------------------------------------------------------------------------------------------------------------------------------------|:---------------------|
 | Version 0.1 |   Added badges, funding, and update table.  Initial commit.                                                                              | 2024 December 2      |
-| Version 0.2 |   Very extensive updates to the README.md file.                                                                                          | 2024 December 3     |
+| Version 0.2 |   Very extensive updates to the README.md file. Rewrote the text, added images, and added more code blocks.                              | 2024 December 3      |
 
 ## Sources of funding
 
