@@ -2,30 +2,39 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 # Problem addressed
 
-Emacsclient opens a new frame (aka what non-Emacsens call a window).
-It can be preferrable to have multiple frames open rather than multiple panes (Emacsens call these windows) open in a frame, especially when working on multiple projects.
+Emacsclient opens a new frame (aka what non-Emacs users or non-Emacsens call a window).
+It can be preferable to have multiple frames open rather than multiple panes (Emacsens call these windows) open in a frame, especially when working on multiple projects, each with an independent context.
+The server can run for days or even months, so the frames can remain up for days or months.
+It took me too long to discover the joys of **emacslient**.
+
 This above bash script provides 21 functions for calling emacsclient, each with a unique foreground--background color combination.
 They enable the opening of 21 uniquely colored frames.
 
-These functions take the name of the project as a command line argument.
+These functions also take the project's name or index number as a command line argument.
 The project name appears in the upper lefthand corner of the frame.
 In the example below, the project is `6112`.
+This label negates memorizing which color scheme is mapped to which project.
 
 <img width="140" alt="Screenshot 2024-12-03 at 6 21 32 AM" src="https://github.com/user-attachments/assets/f64dc9ac-9527-4316-8599-98fe5d8d3d80">
+
+The snapshot below shows the upper lefthand corner of four frames, each with a different label.
+
+<img width="889" alt="Screenshot 2024-12-03 at 6 35 37 AM" src="https://github.com/user-attachments/assets/654f9d12-c62d-4456-83d0-d21ca37d56db">
 
 
 # Customize Emacsclient frames to make them distinguishable
 
-When your initialization file becomes longer, it takes progressively longer for Emacs to start.
+Emacs will take progressively longer to start when your initialization file becomes longer.
 A file with a thousand lines may take five seconds to start.
-It will be a little annoying, especially when the time approaches a minute or a couple of minutes.
+This delay will be annoying, especially when the time approaches a minute or a few minutes.
+Some of the delays can sometimes be associated with an over-configured shell.
 
-One way around this problem is to start an Emacs server (M-x server-start) inside Emacs, and then you use the binary **emacsclient** to attach to the server.
+One way around this problem is to start an Emacs server (M-x server-start) inside Emacs and then use the binary **emacsclient** to attach to the server.
 This binary resides in the same folder as your Emacs binary.
-A new instance of the Emacs frame will open instantly with the configuration of the Emacs profile that was used to start the profile.
+A new instance of the Emacs frame will open instantly with the configuration of the Emacs profile used to start the profile.
 
 You can launch one server per profile if you have multiple profiles.
-You can name each server so that you can attach to the desired profile.
+You can name each server to attach it to the desired profile.
 
 You may wind up with many Emacs frames that look identical.
 You may have different buffers open in the other frames, but they all share the same set of buffers.
@@ -61,8 +70,6 @@ efdcac           Dark Cyan             Aquamarin
 efimpc           Indigo                Medium Purple
 efdgmc           Dark Goldenrod        Moccasin
 ```
-
-
 
 Give the server a name in the init.el file that can be used by the above funcitons. Add the following to the init.el file.
 
