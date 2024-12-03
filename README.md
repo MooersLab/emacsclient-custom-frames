@@ -8,7 +8,8 @@
 
 Emacsclient opens a new frame (aka what non-Emacs users or non-Emacsens call a window).
 It can be preferable to have multiple frames open rather than multiple panes (Emacsens call these windows) open in a frame, especially when working on multiple projects, each with an independent context.
-The server can run for days or even months, so the frames can remain up for days or months.
+The server can run for days or months, so the frames remain up for days or months.
+
 It took me too long to grasp the joys of **emacslient**.
 I wish that I had started using them earlier.
 
@@ -76,6 +77,15 @@ efdcac           Dark Cyan             Aquamarin
 efimpc           Indigo                Medium Purple
 efdgmc           Dark Goldenrod        Moccasin
 ```
+
+## Usage example
+
+Enter the following command in the terminal after customizing and sourcing the above bash script.
+
+```bash
+efimpc 6114
+```
+
 
 ## Naming an Emacs server after its profile
 
