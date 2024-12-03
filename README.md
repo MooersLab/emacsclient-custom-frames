@@ -4,21 +4,22 @@
 
 # Customized Emacs frames
 
-When your initialization file becomes large, it starts to take progressively longer for EMACs to start.
+When your initialization file becomes large, it takes progressively longer for EMACs to start.
 A file with like a thousand lines may take five seconds to start.
-It will be a little annoying, especially when the amount of time approaches a minute or a couple of minutes.
+It will be a little annoying, especially when the time approaches a minute or a couple of minutes.
 
-So one way around this problem is to start an EMAC server, and then you attach to the server through the **emacsclient** application.
+So one way around this problem is to start an Emacs server, and then you attach to the server through the **emacsclient** application.
 The new instance of the Emacs frame will have the configuration file already loaded.
+You don't need to wait.
+.
 You may wind up with many Emacs frames that look identical.
 You may have different buffers open in the other frames, but they all share the same set of buffers.
-
-The above script of bash functions opens emacslient client instances with with the name of the project taken from the commandline as an argument.
+The above script of bash functions opens emacslient client instances with the project's name taken from the command line as an argument.
 The bash functions are mapped to 21 foreground and background color combinations.
 11 are dark on light, and 10 are light on dark.
 
-A table of the function names and the pairs of colored can be printed to the terminal by entering `clients`.
-The function named `efclients` aids in selecting a function.
+A table of the function names and the pairs of colored can be printed to the terminal by entering `efclients`.
+The function named `efclients` aids in selecting a function that will generate a frame with the desired label and color scheme.
 
 ```bash
 FunctionName     bg color              fg color
