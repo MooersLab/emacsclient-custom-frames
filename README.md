@@ -48,7 +48,7 @@ efdgmc           Dark Goldenrod        Moccasin
 
 
 
-Give the server a name. Add the following to the init.el file.
+Give the server a name in the init.el file that can be used by the above funcitons. Add the following to the init.el file.
 
 ```elisp
 (setq server-name "e29f")
