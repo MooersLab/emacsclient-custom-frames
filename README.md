@@ -18,7 +18,8 @@ They enable the opening of 21 uniquely colored frames.
 
 These functions also take the project's name or index number as a command line argument.
 The project name appears in the upper lefthand corner of the frame.
-In the example below, the project is `6112`.
+In the example below, the project index number is `6112`.
+Its full name is `6112MooersLabGitHubLabRepos`, which I could have passed as a command line argument.
 This label negates memorizing which color scheme is mapped to which project.
 
 <img width="140" alt="Screenshot 2024-12-03 at 6 21 32 AM" src="https://github.com/user-attachments/assets/f64dc9ac-9527-4316-8599-98fe5d8d3d80">
@@ -84,7 +85,7 @@ efdgmc           Dark Goldenrod        Moccasin
 Enter the following command in the terminal after customizing and sourcing the above bash script.
 
 ```bash
-efimpc 6114
+efimpc 6112MooersLabGitHubLabRepos
 ```
 
 
