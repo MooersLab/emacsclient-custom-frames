@@ -46,6 +46,8 @@ The above script of bash functions opens emacslient client instances with the pr
 The bash functions are mapped to 21 foreground and background color combinations.
 11 are dark on light, and 10 are light on dark.
 
+## Easy recovery of the names of the customization functions
+
 A table of the function names and the pairs of colored can be printed to the terminal by entering `efclients`.
 The function named `efclients` aids in selecting a function that will generate a frame with the desired label and color scheme.
 
@@ -84,8 +86,41 @@ This server name will be used in the above bash functions to attach to the corre
 (setq server-name "e29f")
 ```
 
-You could make another set of functions to attach to a different profile or these could be generalized by passing the profile name as a command line arugment.
+You could make another set of functions to attach to a different profile, or these could be generalized by passing the profile name as a command line argument.
 
+## Making text visible on highlighted lines
+
+I like to have the line that the cursor is on currently to be highlighted. 
+The color that I had selected for this highlighting Blended too well with light colored font when using dark backgrounds.
+I had to pick a neutral color that would work both against dark and light backgrounds.
+
+<img width="1352" alt="hliine" src="https://github.com/user-attachments/assets/08f8dc41-5c14-42af-bc39-e310e649a8ac">
+
+I added the following code to my initialization file.
+
+```elisp
+;; Load hl-line mode
+(require 'hl-line)
+
+;; Set the hl-line face to a neutral color
+(set-face-attribute 'hl-line nil :background "Gray70" :foreground nil)
+
+;; Enable global hl-line mode
+(global-hl-line-mode 1)
+```
+
+Likewise, I had a similar problem with selected text that was part of a region.
+The following code will change the color of the selected text in a region to black.
+
+<img width="1445" alt="region" src="https://github.com/user-attachments/assets/aa574cc4-3472-4c5a-8f62-67f449cb23c1">
+
+```elisp
+;; Set the region face to an intermediate color
+(set-face-attribute 'region nil :background "SlateGray" :foreground "black")
+
+;; Set the cursor color
+(set-cursor-color "yellow")
+```
 
 
 ## Update history
