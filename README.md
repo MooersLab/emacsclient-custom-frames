@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/static/v1?label=emacsclient-custom-frames&message=0.1&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=emacsclient-custom-frames&message=0.2&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # Customize emacsclient frames to make them distinguishable
@@ -138,6 +138,7 @@ The following code will change the color of the selected text in a region to bla
 |Version      | Changes                                                                                                                                  | Date                 |
 |:-----------|:------------------------------------------------------------------------------------------------------------------------------------------|:---------------------|
 | Version 0.1 |   Added badges, funding, and update table.  Initial commit.                                                                              | 2024 December 2      |
+| Version 0.2 |   Very extensive updates to the README.md file.                                                                                          | 2024 December 3     |
 
 ## Sources of funding
 
