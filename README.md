@@ -75,13 +75,16 @@ efimpc           Indigo                Medium Purple
 efdgmc           Dark Goldenrod        Moccasin
 ```
 
-Give the server a name in the init.el file that can be used by the above funcitons. Add the following to the init.el file.
+## Naming an Emacs server after its profile
+
+Give the server a unique name in the `init.el` file by adding the following line.
+This server name will be used in the above bash functions to attach to the correct profile.
 
 ```elisp
 (setq server-name "e29f")
-(server-start)
 ```
 
+You could make another set of functions to attach to a different profile or these could be generalized by passing the profile name as a command line arugment.
 
 
 
