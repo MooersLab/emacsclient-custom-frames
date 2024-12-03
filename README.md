@@ -13,7 +13,7 @@ The server can run for days or months, so the frames remain up for days or month
 It took me too long to grasp the joys of **emacslient**.
 I wish that I had started using them earlier.
 
-This above bash script provides 21 functions for calling **emacslient**, each with a unique foreground--background color combination.
+This above bash script `colored-clients.sh` provides 21 functions for calling **emacslient**, each with a unique foreground--background color combination.
 They enable the opening of 21 uniquely colored frames.
 
 These functions also take the project's name or index number as a command line argument.
@@ -39,11 +39,11 @@ This binary resides in the same folder as your Emacs binary.
 A new instance of the Emacs frame will open instantly with the configuration of the Emacs profile used to start the profile.
 
 You can launch one server per profile if you have multiple profiles for distinct workflows.
-You can name each server to attach it to the desired profile.
+You can name each server to attach it to your desired profile.
 
 You may wind up with many Emacs frames that look identical.
 You may have different buffers opened in the other frames, but they all share the same set of buffers.
-The above script of bash functions opens emacslient client instances with the project's name taken from the command line as an argument.
+The above script ,`colored-clients.sh`, of bash functions opens emacslient client instances with the project's name taken from the command line as an argument.
 The bash functions are mapped to 21 foreground and background color combinations.
 11 are dark on light, and 10 are light on dark.
 
@@ -51,6 +51,7 @@ The bash functions are mapped to 21 foreground and background color combinations
 
 A table of the function names and the pairs of colored can be printed to the terminal by entering `efclients`.
 The function named `efclients` aids in selecting a function that will generate a frame with the desired label and color scheme.
+`ef` is my abbreviation for my Emacs profile `e29fewpackages`.
 
 ```bash
 FunctionName     bg color              fg color
