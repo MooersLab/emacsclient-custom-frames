@@ -52,7 +52,8 @@ The bash functions are mapped to 21 foreground and background color combinations
 
 A table of the function names and the pairs of colored can be printed to the terminal by entering `efclients`.
 The function named `efclients` aids in selecting a function that will generate a frame with the desired label and color scheme.
-`ef` is my abbreviation for my Emacs profile `e29fewpackages`.
+`ef` is my abbreviation for my Emacs profile, which named `e29fewpackages`.
+`29` is the version number of the Emacs binary.
 
 ```bash
 FunctionName     bg color              fg color
@@ -102,9 +103,9 @@ You could make another set of functions to attach to a different profile, or the
 
 ## Making text visible on highlighted lines
 
-I like to have the line that the cursor is on currently to be highlighted. 
-The color that I had selected for this highlighting Blended too well with light colored font when using dark backgrounds.
-I had to pick a neutral color that would work both against dark and light backgrounds.
+I would like to highlight the line that the cursor is currently on. 
+The color I selected for this highlighting blended too well with light-colored font when using dark backgrounds.
+I had to pick a neutral color that would work against dark and light backgrounds.
 
 <img width="1352" alt="hliine" src="https://github.com/user-attachments/assets/08f8dc41-5c14-42af-bc39-e310e649a8ac">
 
